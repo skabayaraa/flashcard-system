@@ -1,0 +1,12 @@
+flashcard-system/
+│
+├── pom.xml
+└── src/
+    └── main/
+        └── java/
+            └── flashcard/
+                ├── Flashcard.java
+                ├── FlashcardManager.java
+                ├── RecentMistakesFirstSorter.java
+                ├── Achievements.java
+                └── Main.java
