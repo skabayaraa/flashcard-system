@@ -1,15 +1,31 @@
-package flashcard;
+public class flashcard {
+    private String question;
+    private String answer;
+    private int correctAnswers = 0;
+    private int wrongAnswers = 0;
 
-public class Flashcard {
-    public String question;
-    public String answer;
-    public int correctCount;
-    public int mistakes;
-
-    public Flashcard(String question, String answer) {
+    public FlashCard(String question, String answer) {
         this.question = question;
         this.answer = answer;
-        this.correctCount = 0;
-        this.mistakes = 0;
+    }
+
+    public void incrementCorrectAnswers() {
+        correctAnswers++;
+    }
+
+    public void incrementWrongAnswers() {
+        wrongAnswers++;
+    }
+
+    public boolean isCorrect() {
+        return correctAnswers > 0;
+    }
+
+    public boolean isConfident() {
+        return correctAnswers >= 3;
+    }
+
+    public boolean isRepeat() {
+        return correctAnswers > 5;
     }
 }
