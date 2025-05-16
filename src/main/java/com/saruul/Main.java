@@ -13,7 +13,7 @@ public class Main {
         RecentMistakesFirstSorter sorter = new RecentMistakesFirstSorter();
 
         // 1. Файлын нэрийг асуух
-        System.out.print(" Картуудын файлын нэрийг оруулна уу (жишээ нь: cards.txt): ");
+        System.out.print(" WRITE THE cards.txt ");
         String filename = scanner.nextLine().trim();
 
         // 2. Картуудыг ачаалах

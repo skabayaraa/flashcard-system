@@ -3,9 +3,23 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "com.saruul.Main",
+            "projectName": "flashcard-system"
+        },
+        {
+            "type": "java",
+            "name": "FlashCardSystem",
+            "request": "launch",
+            "mainClass": "com.saruul.FlashCardSystem",
+            "projectName": "flashcard-system"
+        },
+        {
+            "type": "java",
             "name": "Launch Flashcard System",
             "request": "launch",
-            "mainClass": "flashcard.Main",  
+            "mainClass": "flashcard.Main",
             "projectName": "flashcard-system"
         }
     ]

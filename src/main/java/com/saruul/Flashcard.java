@@ -20,6 +20,8 @@ public class Flashcard {
         return answer;
     }
 
+    
+
     public void incrementCorrectAnswers() {
         
         correctAnswers++;
