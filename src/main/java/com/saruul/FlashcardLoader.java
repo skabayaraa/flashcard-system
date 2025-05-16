@@ -1,7 +1,7 @@
-package com.saruul.flashcard;
+package com.saruul;
 
 import java.io.*;
-import java.util.List;
+
 
 public class FlashcardLoader {
     public static void loadFromFile(String filename, FlashcardManager manager) {

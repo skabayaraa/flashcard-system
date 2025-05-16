@@ -1,4 +1,8 @@
 package com.saruul;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class RecentMistakesFirstSorter implements CardOrganizer {
     private List<Flashcard> wrongAnsweredCards;
 
@@ -6,9 +10,13 @@ public class RecentMistakesFirstSorter implements CardOrganizer {
         this.wrongAnsweredCards = new ArrayList<>();
     }
 
+    public void sortCards(List<Flashcard> cards) {
+        throw new UnsupportedOperationException("Unimplemented method 'sortCards'");
+    }
+    
     @Override
-    public List<FlashCard> organizeCards(List<FlashCard> cards) {
-        List<FlashCard> organizedCards = new ArrayList<>(cards);
+    public List<Flashcard> organizeCards(List<Flashcard> cards) {
+        List<Flashcard> organizedCards = new ArrayList<>(cards);
         organizedCards.sort((card1, card2) -> {
             boolean card1Wrong = wrongAnsweredCards.contains(card1);
             boolean card2Wrong = wrongAnsweredCards.contains(card2);
@@ -17,7 +25,7 @@ public class RecentMistakesFirstSorter implements CardOrganizer {
         return organizedCards;
     }
 
-    public void addWrongAnsweredCard(FlashCard card) {
+    public void addWrongAnsweredCard(Flashcard card) {
         wrongAnsweredCards.add(card);
     }
 }

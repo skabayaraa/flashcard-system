@@ -1,12 +1,12 @@
-package com.saruul.flashcard;
+package com.saruul;
 
 
 public class Flashcard {
-    private String question;
+    String question;
     private String answer;
-    private int correctCount = 0;
-    private int mistakes = 0;
-
+    int correctCount = 0;
+    private int correctAnswers;
+    private int wrongAnswers;
     public Flashcard(String question, String answer) {
         this.question = question;
         this.answer = answer;
@@ -21,6 +21,7 @@ public class Flashcard {
     }
 
     public void incrementCorrectAnswers() {
+        
         correctAnswers++;
     }
 
