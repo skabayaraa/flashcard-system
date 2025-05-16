@@ -1,5 +1,6 @@
+package com.saruul;
 public class RecentMistakesFirstSorter implements CardOrganizer {
-    private List<FlashCard> wrongAnsweredCards;
+    private List<Flashcard> wrongAnsweredCards;
 
     public RecentMistakesFirstSorter() {
         this.wrongAnsweredCards = new ArrayList<>();

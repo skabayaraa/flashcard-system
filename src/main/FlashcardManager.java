@@ -1,4 +1,5 @@
-package flashcard;
+package com.saruul;
+
 
 import java.util.*;
 

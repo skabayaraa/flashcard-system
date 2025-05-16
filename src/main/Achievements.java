@@ -1,3 +1,7 @@
+package com.saruul;
+import java.util.List;
+import java.util.ArrayList;
+
 public class Achievements {
     public static void checkAchievements(List<Flashcard> cards) {
         int maxCorrect = 0;
@@ -16,7 +20,7 @@ public class Achievements {
         System.out.println("Дээд амжилт: " + maxCorrect + " зөв хариулт");
         System.out.println("Хамгийн амжилттай карт(ууд):");
         for (Flashcard card : topCards) {
-            System.out.println("- " + card.question);  // Эсвэл card.getQuestion() гэдэг getter ашиглах
+            System.out.println("- " + card.question); 
         }
     }
 }
